@@ -1,34 +1,18 @@
 package com.example.katri.lolvotingsystem;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.view.View.OnClickListener;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MobileLogin extends AppCompatActivity {
 
     private EditText UserID;
     private EditText Password;
+    private CheckBox Terms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +21,23 @@ public class MobileLogin extends AppCompatActivity {
 
         UserID = (EditText) findViewById(R.id.UserID);
         Password = (EditText) findViewById(R.id.Password);
+        Terms = (CheckBox) findViewById(R.id.Terms_checkbox);
+        Terms.setEnabled(true);
+
+
+
+        Terms.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Terms.setChecked(!Terms.isChecked());
+                Terms.refreshDrawableState();
+            }
+        });
+
     }
 
     public void checkLogin(final View arg0) {
-        if((UserID.getText().toString()).equals("") || (Password.getText().toString()).equals("")){
+        if((UserID.getText().toString()).equals("") || (Password.getText().toString()).equals("") || !Terms.isChecked()){
             Toast.makeText(getApplicationContext(), "Error: there is missing details!", Toast.LENGTH_LONG).show();
         }
         else {
@@ -49,4 +46,6 @@ public class MobileLogin extends AppCompatActivity {
             us.execute();
         }
     }
+
+
 }

@@ -28,15 +28,17 @@
         android:id="@+id/imageView4"
         android:layout_width="109dp"
         android:layout_height="100dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/vslogo" />
 
     <CheckBox
+        android:id="@+id/Terms_checkbox"
         android:layout_width="268dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="276dp"
         android:padding="8dp"
         android:text="I accept!"
         android:textColor="#8c73279f"
@@ -53,12 +55,12 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.535">
+        app:layout_constraintVertical_bias="0.306">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Terms of use!"
+            android:hint="@string/terms_of_use"
             android:padding="5dp"
             android:textColor="@android:color/background_light"
             android:textColorLink="@android:color/white"
