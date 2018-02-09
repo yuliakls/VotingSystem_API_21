@@ -17,7 +17,7 @@ import java.util.HashMap;
 
 public class MobileCandidateList extends AppCompatActivity implements AsyncResponse {
 
-    private ProgressDialog pDialog;
+    private ProgressDialog pDialog;//salilili
     private ListView lv;
     String User;
     String ExistingVote;

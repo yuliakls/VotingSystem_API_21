@@ -1,4 +1,4 @@
-#Fri Feb 09 21:14:12 IST 2018
-base.0=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Fri Feb 09 22:17:01 IST 2018
+base.0=C\:\\Users\\Sali\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
-file.0=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
+file.0=C\:\\Users\\Sali\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex
