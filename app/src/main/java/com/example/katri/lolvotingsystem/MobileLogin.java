@@ -3,6 +3,7 @@ package com.example.katri.lolvotingsystem;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -21,6 +22,17 @@ public class MobileLogin extends AppCompatActivity {
         UserID = (EditText) findViewById(R.id.UserID);
         Password = (EditText) findViewById(R.id.Password);
         Terms = (CheckBox) findViewById(R.id.Terms_checkbox);
+        Terms.setEnabled(true);
+
+
+
+        Terms.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Terms.setChecked(!Terms.isChecked());
+                Terms.refreshDrawableState();
+            }
+        });
 
     }
 
@@ -34,4 +46,6 @@ public class MobileLogin extends AppCompatActivity {
             us.execute();
         }
     }
+
+
 }

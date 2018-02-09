@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri Feb 09 22:01:09 IST 2018
+#Sat Feb 10 00:11:06 IST 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\select_dialog_item_material.xml
