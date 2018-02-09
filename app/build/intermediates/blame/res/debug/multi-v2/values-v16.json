@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f372982efa2a71ce07146cdf5e764c72\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\cece1b76481dd81a515c5f1a91a88b1b\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d19328c58e1ca10d6154e473c8bbdc7d\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f1fc7c8a298cb9417e9d0b4992685f6e\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]
