@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\d9f271a8af9628a86f1ff5fef677de4c\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c214182a558c98d281c1ac2dec9668c5\\res\\values-v16\\values-v16.xml",
+=======
             "outputFile": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d19328c58e1ca10d6154e473c8bbdc7d\\res\\values-v16\\values-v16.xml",
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,6 +38,8 @@
                         "endColumns": "12",
                         "endOffsets": "289"
                     }
+<<<<<<< HEAD
+=======
                 },
                 {
                     "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\f1fc7c8a298cb9417e9d0b4992685f6e\\res\\values-v16\\values-v16.xml",
@@ -31,6 +50,7 @@
                         "endColumns": "65",
                         "endOffsets": "116"
                     }
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                 }
             ]
         }

@@ -5,7 +5,11 @@
     <color name="colorAccent">#FF4081</color>
     <color name="transparent">#00000000</color>
     <color name="white">#e4e5e7</color>
+<<<<<<< HEAD
+    <color name="purple">#8cc045cf</color>
+=======
     <color name="purple">#c045cf</color>
     <color name="PrimaryDark">#593fb5</color>
     <color name="blue">#fd3c71c6</color>
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
 </resources>
