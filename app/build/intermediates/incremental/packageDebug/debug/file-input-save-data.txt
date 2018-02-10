@@ -1,4 +1,5 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Sat Feb 10 15:48:53 IST 2018
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
@@ -820,3 +821,31 @@ count=273
 230.file=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xxxhdpi-v4\\ic_launcher.png
 153.file=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\layout\\abc_screen_toolbar.xml
 157.set=ANDROID_RESOURCE
+=======
+#Sat Feb 10 11:35:51 IST 2018
+2.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+5.set=DEX
+0.path=classes.dex
+2.baseType=DIRECTORY
+3.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+2.set=DEX
+1.path=classes.dex
+4.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+count=6
+5.baseType=DIRECTORY
+2.path=classes.dex
+5.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+4.set=DEX
+3.path=classes.dex
+3.baseType=DIRECTORY
+1.set=DEX
+4.path=classes.dex
+1.baseType=DIRECTORY
+5.path=classes.dex
+0.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+0.baseType=DIRECTORY
+3.set=DEX
+1.base=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+4.baseType=DIRECTORY
+0.set=DEX
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c

@@ -4,7 +4,11 @@
             "outputFile": "C:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\d9f271a8af9628a86f1ff5fef677de4c\\res\\values-v16\\values-v16.xml",
+=======
+                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\2b32b49a390699d10cd5aaa9dd4d3c97\\res\\values-v16\\values-v16.xml",
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +18,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c214182a558c98d281c1ac2dec9668c5\\res\\values-v16\\values-v16.xml",
+=======
+                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5320cc8115bca34f7c34201e295551b9\\res\\values-v16\\values-v16.xml",
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

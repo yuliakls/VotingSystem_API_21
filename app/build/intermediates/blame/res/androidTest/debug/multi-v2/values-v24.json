@@ -1,10 +1,17 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c214182a558c98d281c1ac2dec9668c5\\res\\values-v24\\values-v24.xml",
+=======
+            "outputFile": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d19328c58e1ca10d6154e473c8bbdc7d\\res\\values-v24\\values-v24.xml",
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -14,7 +21,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\2ad1b00200a0c05bd78738c5e916075f\\res\\values-v24\\values-v24.xml",
+=======
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\3172457d67b08538ad5b60aaa31906ce\\res\\values-v24\\values-v24.xml",
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

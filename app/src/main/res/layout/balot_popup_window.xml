@@ -1,21 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="250dp"
+    android:layout_height="110dp"
+    android:background="@color/PrimaryDark"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="5dp">
 
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="31dp"
+        android:layout_height="22dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/vlogs" />
 
     <TextView
         android:id="@+id/textView"
         style="@style/Base.TextAppearance.AppCompat.Body1"
-        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Confirmation"
+        android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:textSize="25sp"
         android:background="@android:color/transparent"
-        android:textColor="@color/colorPrimary"
-        android:textStyle="bold"/>
+        android:text="@string/Confirmation"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="237dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yesbutton"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Yes" />
+
+        <Button
+            android:id="@+id/nobutton"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="No" />
+    </LinearLayout>
 
 
 </LinearLayout>
