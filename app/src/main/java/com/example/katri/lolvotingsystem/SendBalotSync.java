@@ -7,7 +7,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
-import android.util.Log;
 import android.widget.Toast;
 
 import org.json.JSONObject;
@@ -17,7 +16,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Iterator;
@@ -57,8 +55,6 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     protected String doInBackground(String... arg0) {
-        BallotKeyBuilder Key = new BallotKeyBuilder(activity.getApplicationContext());
-        //Log.i("key------------------",obj.BuildKey());
         String ID = "'" + CurrentUser.GetUserID() + "'";
         String VN = "'" + ExistingVote + "'";
         String CID = "'" + CandidateID + "'";
@@ -72,7 +68,7 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
             postDataParams.put("UserID", ID);
             postDataParams.put("VoteNum", VN);
 
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setReadTimeout(15000 /* milliseconds */);
             conn.setConnectTimeout(15000 /* milliseconds */);
             conn.setRequestMethod("POST");
@@ -107,17 +103,17 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
 
         if(answer.equals("true")) {
             try {
-                Log.i("Yeahhhhhhhh",answer);
+
                 URL url = new URL("https://morning-anchorage-32230.herokuapp.com/sendballot");
 
                 JSONObject postDataParams = new JSONObject();
 
+                BallotKeyBuilder Key = new BallotKeyBuilder(activity.getApplicationContext());
                 postDataParams.put("CandidateID", CID);
                 postDataParams.put("VoteNum", VN);
-                postDataParams.put("VoteKey", "'totototototo'");
+                postDataParams.put("VoteKey", "'" + Key.BuildKey() + "'");
 
-
-                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
                 conn.setReadTimeout(15000 /* milliseconds */);
                 conn.setConnectTimeout(15000 /* milliseconds */);
                 conn.setRequestMethod("POST");
@@ -143,7 +139,6 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
                     }
                     in.close();
 
-                    Log.i("Yeahhhh2222222",sb.toString());
 
                     return sb.toString();
                 } else {

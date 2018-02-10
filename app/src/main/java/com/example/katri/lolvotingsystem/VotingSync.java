@@ -21,7 +21,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.text.ParseException;
@@ -30,7 +29,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
-
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -85,7 +83,7 @@ public class VotingSync extends AsyncTask<String, Void, String> {
             JSONObject postDataParams = new JSONObject();
             postDataParams.put("UserID", ID);
 
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setReadTimeout(15000 );
             conn.setConnectTimeout(15000 );
             conn.setRequestMethod("POST");
