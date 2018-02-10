@@ -19,7 +19,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".MobileVotingList" />
-        <activity android:name=".MobileCandidateList"></activity>
+        <activity android:name=".MobileCandidateList" />
+        <activity android:name=".AdminMenu" />
+        <activity android:name=".AddUser" />
+        <activity android:name=".RemoveUser" />
+        <activity android:name=".AddVote" />
+        <activity android:name=".RemoveVote"></activity>
     </application>
 
 </manifest>

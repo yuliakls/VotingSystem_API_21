@@ -118,9 +118,9 @@ public class UserSync extends AsyncTask<String, Void, String> {
 
     public String getPostDataString(JSONObject params) throws Exception {
 
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-        Iterator<String> itr = params.keys();
+            StringBuilder result = new StringBuilder();
+            boolean first = true;
+            Iterator<String> itr = params.keys();
 
         while(itr.hasNext()){
             String key= itr.next();

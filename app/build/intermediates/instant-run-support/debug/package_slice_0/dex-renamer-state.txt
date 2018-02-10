@@ -1,0 +1,11 @@
+<<<<<<< HEAD
+#Sat Feb 10 15:48:47 IST 2018
+base.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+renamed.0=classes.dex
+file.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1\\classes.dex
+=======
+#Sat Feb 10 11:35:25 IST 2018
+base.0=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
+renamed.0=classes.dex
+>>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
