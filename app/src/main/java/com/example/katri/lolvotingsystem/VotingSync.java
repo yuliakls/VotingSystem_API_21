@@ -25,9 +25,12 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
+
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -133,13 +136,9 @@ public class VotingSync extends AsyncTask<String, Void, String> {
                     String description = c.getString("VoteDescription");
 
                     Log.i("error------------",start);
-/*
-                    try {
-                        AddVoting(id,start,end,name,description);
-                    } catch (ParseException e) {
-                        e.printStackTrace();
-                    }
-*/
+
+
+
                     HashMap<String, String> contact = new HashMap<>();
                     // adding each child node to HashMap key => value
                     contact.put("id", id);
@@ -172,12 +171,7 @@ public class VotingSync extends AsyncTask<String, Void, String> {
 
         delegate.processFinish(voteList);
     }
-/*
-    public  void AddVoting(String id,String start,String end,String name,String description) throws ParseException {
-        Voting NewVote = new Voting(Integer.valueOf(id),name,description,start,end);
-        UserVotings.add(NewVote);
-    }
-*/
+
     public String getPostDataString(JSONObject params) throws Exception {
 
         StringBuilder result = new StringBuilder();
@@ -196,6 +190,24 @@ public class VotingSync extends AsyncTask<String, Void, String> {
             result.append(URLEncoder.encode(value.toString(), "UTF-8"));
         }
         return result.toString();
+    }
+
+    public static boolean Compare( String start , String finish) {
+        try {
+            SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            String current = formatter.format(new Date());
+
+            Date s = formatter.parse(start.replaceAll("Z$", "+0000"));
+            Date f = formatter.parse(finish.replaceAll("Z$", "+0000"));
+            Date c = formatter.parse(current.replaceAll("Z$", "+0000"));
+            if (f.compareTo(c)>0 && c.compareTo(s)>0)
+                return true;
+        }
+        catch (ParseException e)
+        {
+            return false;
+        }
+        return false;
     }
 }
 
