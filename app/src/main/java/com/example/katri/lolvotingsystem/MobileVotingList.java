@@ -1,13 +1,12 @@
 package com.example.katri.lolvotingsystem;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -32,6 +31,7 @@ public class MobileVotingList extends AppCompatActivity implements AsyncResponse
         VotingSync vs = new VotingSync(this,0);
         vs.delegate = this;
         vs.execute();
+
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

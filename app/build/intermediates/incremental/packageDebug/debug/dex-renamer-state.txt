@@ -1,4 +1,13 @@
+<<<<<<< HEAD
+#Sat Feb 10 10:53:16 IST 2018
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+=======
 #Sat Feb 10 10:26:27 IST 2018
 base.0=C\:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+>>>>>>> 383741824ca63d4720a801044ab211f6865b18d7
 renamed.0=classes.dex
 file.0=C\:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19\\classes.dex
