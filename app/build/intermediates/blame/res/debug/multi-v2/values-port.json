@@ -1,25 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d19328c58e1ca10d6154e473c8bbdc7d\\res\\values-port\\values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "C:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\cece1b76481dd81a515c5f1a91a88b1b\\res\\values-port\\values-port.xml",
+                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5320cc8115bca34f7c34201e295551b9\\res\\values-port\\values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
