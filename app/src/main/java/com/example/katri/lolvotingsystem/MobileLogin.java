@@ -29,7 +29,6 @@ public class MobileLogin extends AppCompatActivity {
         Terms.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Terms.setChecked(!Terms.isChecked());
                 Terms.refreshDrawableState();
             }
         });

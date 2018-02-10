@@ -6,4 +6,6 @@
     <color name="transparent">#00000000</color>
     <color name="white">#e4e5e7</color>
     <color name="purple">#c045cf</color>
+    <color name="PrimaryDark">#593fb5</color>
+    <color name="blue">#fd3c71c6</color>
 </resources>
