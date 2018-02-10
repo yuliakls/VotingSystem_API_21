@@ -14,8 +14,6 @@ import javax.crypto.spec.SecretKeySpec;
 
 public class AES {
 
-    //this is a test comment
-
     private static final String secret = "_-66$pP6&ZP<mM_jp?";
     private static SecretKeySpec secretKey;
     private static byte[] key;
@@ -77,6 +75,23 @@ public class AES {
         catch (Exception e)
         {
             return "Wrong Key!!";
+        }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static String keygen(String strToEncrypt, String key )
+    {
+        try
+        {
+            setKey(key);
+            Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5Padding");
+            cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+            return android.util.Base64.encodeToString(cipher.doFinal(strToEncrypt.getBytes()), 0).substring(0,128);
+        }
+        catch (Exception e)
+        {
+            System.out.println("Error while encrypting: " + e.toString());
+            return e.toString();
         }
     }
 }
