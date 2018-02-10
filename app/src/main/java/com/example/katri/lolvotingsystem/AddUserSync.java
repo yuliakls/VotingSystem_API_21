@@ -113,9 +113,22 @@ public class AddUserSync extends AsyncTask<String, Void, String> {
         if(!result.equals("")){
             if(result.equals("true")) {
                 Toast.makeText(activity.getApplicationContext(), "The User Was Added!", Toast.LENGTH_LONG).show();
+
+            // Clear
+            this.UserID.getText().clear();
+            this.Password.getText().clear();
+            this.UserName.getText().clear();
+            this.Email.getText().clear();
+
             }
             else {
                 Toast.makeText(activity.getApplicationContext(), "Sorry!", Toast.LENGTH_LONG).show();
+
+                // Clear
+                this.UserID.getText().clear();
+                this.Password.getText().clear();
+                this.UserName.getText().clear();
+                this.Email.getText().clear();
             }
 
         }

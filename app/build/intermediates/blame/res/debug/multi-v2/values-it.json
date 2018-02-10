@@ -4,11 +4,7 @@
             "outputFile": "C:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-it\\values-it.xml",
             "map": [
                 {
-<<<<<<< HEAD
-                    "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\c214182a558c98d281c1ac2dec9668c5\\res\\values-it\\values-it.xml",
-=======
-                    "source": "C:\\Users\\Yulia\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\5320cc8115bca34f7c34201e295551b9\\res\\values-it\\values-it.xml",
->>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
+                    "source": "C:\\Users\\salib\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\31e4798062fcb0217667750dc7cb9555\\res\\values-it\\values-it.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
