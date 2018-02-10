@@ -5,27 +5,35 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.0"
-    timestamp="1518265569583"
+    timestamp="1518275368045"
     token="758255855895121264"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1647" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="41" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
+
+    <artifact
+        location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\outputs\apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1518252468828"
+        timestamp="1518271522222"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -66,32 +74,17 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1518264968717"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1518274380333"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
+            location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\outputs\apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1518265399316"
+        timestamp="1518275368045"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -100,9 +93,5 @@
             location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
-    <build
-        build-mode="COLD"
-        timestamp="1518265569583"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
