@@ -8,8 +8,8 @@
     tools:context="com.example.katri.lolvotingsystem.MobileVotingList">
 
 
-
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="91dp"
         android:layout_height="30dp"
         android:background="@android:color/transparent"
@@ -28,14 +28,16 @@
     <TextView
         android:id="@+id/hellouser"
         android:layout_width="335dp"
-        android:layout_height="23dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="413dp"
+        android:layout_marginTop="9dp"
         android:background="@android:color/transparent"
         android:ems="10"
         android:text="Hello"
         android:textColor="@color/purple"
         android:textSize="15dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/admin_menu_button"
         app:layout_constraintHorizontal_bias="0.017"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -46,8 +48,20 @@
         android:id="@+id/list"
         android:layout_width="fill_parent"
         android:layout_height="441dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/admin_menu_button"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="204dp"
+        android:background="@color/purple"
+        android:text="Admin menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hellouser" />
 
 </android.support.constraint.ConstraintLayout>
