@@ -137,7 +137,8 @@ public class VotingSync extends AsyncTask<String, Void, String> {
 
                     Log.i("error------------",start);
 
-
+                    if(Compare(start, end) == false)
+                        continue;
 
                     HashMap<String, String> contact = new HashMap<>();
                     // adding each child node to HashMap key => value
