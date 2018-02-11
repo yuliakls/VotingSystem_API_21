@@ -114,7 +114,7 @@ public class AddVoteSync extends AsyncTask<String, Void, String> {
 
                     if (isNumeric(sb.toString())) {
                         for (int i = 0; i < voteList.size(); i++) {
-
+//jhuhu
                             String CN = "'" + voteList.get(i).toString() + "'";
                             String ID = "'" + Integer.toString(i+1) + "'";
 
