@@ -6,8 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class RemoveUser extends AppCompatActivity {
+
+    private EditText UserID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +19,27 @@ public class RemoveUser extends AppCompatActivity {
         setContentView(R.layout.activity_remove_user);
 
         setUpFinishButton();
-
+        UserID = (EditText) findViewById(R.id.UserID);
     }
 
     public static Intent makeIntent(Context context) {
         return new Intent(context,RemoveUser.class);
+    }
+
+
+    public void doIt(final View arg)
+    {
+        if((UserID.getText().toString()).equals("")) {
+            Toast.makeText(getApplicationContext(), "Error: there is missing details!", Toast.LENGTH_LONG).show();
+        }
+
+        else {
+            RemoveUserSync rus = new RemoveUserSync(this);
+            rus.execute();
+
+            // Clear
+            //this.UserID.getText().clear();
+        }
     }
 
     private void setUpFinishButton() {
@@ -32,6 +52,7 @@ public class RemoveUser extends AppCompatActivity {
                 finish();
             }
         });
-
     }
+
+
 }

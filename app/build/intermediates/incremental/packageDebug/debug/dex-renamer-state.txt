@@ -1,30 +1,12 @@
-<<<<<<< HEAD
-#Sat Feb 10 16:53:07 IST 2018
-=======
-#Sat Feb 10 11:35:51 IST 2018
+#Sun Feb 11 03:12:44 IST 2018
 path.1=classes.dex
 path.0=classes.dex
->>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
 renamed.5=classes6.dex
 renamed.4=classes5.dex
 renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-<<<<<<< HEAD
-base.5=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
-base.4=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
-base.3=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
-base.2=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-base.1=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
-base.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
-file.5=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
-file.4=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13\\classes.dex
-file.3=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16\\classes.dex
-file.2=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14\\classes.dex
-file.1=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17\\classes.dex
-file.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12\\classes.dex
-=======
 base.5=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
 base.4=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 base.3=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
@@ -35,4 +17,3 @@ path.5=classes.dex
 path.4=classes.dex
 path.3=classes.dex
 path.2=classes.dex
->>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c

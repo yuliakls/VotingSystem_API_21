@@ -8,15 +8,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddUser extends AppCompatActivity {
 
-//
-//    private EditText UserID;
-//    private EditText Name;
-//    private EditText Email;
-//    private EditText Password;
-//    private boolean Admin;
+
+    private EditText UserID;
+    private EditText Name;
+    private EditText Email;
+    private EditText Password;
+    private boolean Admin;
 
 
     @Override
@@ -24,29 +25,29 @@ public class AddUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_user);
 
-        //setUpAddButton();
         setUpFinishButton();
+
+        UserID = (EditText) findViewById(R.id.UserID);
+        Password = (EditText) findViewById(R.id.Password);
+        Name = (EditText) findViewById(R.id.userName);
+        Email = (EditText) findViewById(R.id.UserEmail);
 
     }
 
 
     public void doIt(final View arg)
     {
-        AddUserSync aus = new AddUserSync( this);
-        aus.execute();
+        if((UserID.getText().toString()).equals("") || (Password.getText().toString()).equals("") || (Name.getText().toString()).equals("") || (Email.getText().toString()).equals("")) {
+            Toast.makeText(getApplicationContext(), "Error: there is missing details!", Toast.LENGTH_LONG).show();
+        }
+
+        else {
+            AddUserSync aus = new AddUserSync(this);
+            aus.execute();
+
+        }
     }
 
-
-//    private void setUpAddButton() {
-//
-//        Button add_btn = (Button) findViewById(R.id.add_btn);
-//
-//        add_btn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//            }
-//        });
-//    }
 
     public static Intent makeIntent(Context context) {
         return new Intent(context,AddUser.class);

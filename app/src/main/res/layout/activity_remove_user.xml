@@ -49,7 +49,7 @@
         android:drawableLeft="@drawable/personalcopy"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="ID : "
+        android:hint="ID "
         android:inputType="text"
         android:maxLines="1"
         android:padding="8dp"
@@ -90,10 +90,10 @@
         android:text="Finish"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.964"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.925"
+        app:layout_constraintVertical_bias="0.914"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -116,18 +116,20 @@
     <Button
         android:id="@+id/remove_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="372dp"
+        android:layout_marginTop="8dp"
         android:text="Remove"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.658"
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:onClick="doIt"/>
 
 </android.support.constraint.ConstraintLayout>

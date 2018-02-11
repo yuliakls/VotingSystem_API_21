@@ -25,6 +25,8 @@ import java.util.Iterator;
 
 import javax.net.ssl.HttpsURLConnection;
 
+import static com.example.katri.lolvotingsystem.RemoveUser.*;
+
 /**
  * Created by salib on 10/02/2018.
  */
@@ -51,9 +53,6 @@ public class RemoveUserSync extends AsyncTask<String, Void, String> {
         pDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         pDialog.show();
     }
-
-
-
 
 
 
@@ -106,11 +105,19 @@ public class RemoveUserSync extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String result) {
         if (pDialog.isShowing()) pDialog.dismiss();
 
-        if(!result.equals("")){
-            Toast.makeText(activity.getApplicationContext(), "The ID was Deleted successfully!", Toast.LENGTH_LONG).show();
-        }
-        else{
-            Toast.makeText(activity.getApplicationContext(), "Error: the user doesn't exist!", Toast.LENGTH_LONG).show();
+        if(!result.equals("")) {
+            if (result.equals("true")) {
+                Toast.makeText(activity.getApplicationContext(), "The User Was Removed!", Toast.LENGTH_LONG).show();
+
+                this.UserID.getText().clear();
+
+
+            } else {
+                Toast.makeText(activity.getApplicationContext(), "Sorry! The User Doesnt Exist", Toast.LENGTH_LONG).show();
+
+                this.UserID.getText().clear();
+
+            }
         }
     }
 

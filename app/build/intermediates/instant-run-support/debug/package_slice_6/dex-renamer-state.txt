@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-#Sat Feb 10 15:48:51 IST 2018
-base.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
-renamed.0=classes.dex
-file.0=C\:\\Users\\salib\\StudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7\\classes.dex
-=======
-#Sat Feb 10 11:35:41 IST 2018
+#Sun Feb 11 03:12:33 IST 2018
 base.0=C\:\\Users\\Yulia\\AndroidStudioProjects\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 path.0=classes.dex
 renamed.0=classes.dex
->>>>>>> e80ca4cbb78fff13d190d4d0719154e915559e0c
