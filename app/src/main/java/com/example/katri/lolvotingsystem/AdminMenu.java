@@ -30,6 +30,21 @@ public class AdminMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public  void AddUser(final View arg0){
+        Intent intent = AddUser.makeIntent(AdminMenu.this);
+        startActivity(intent);
+    }
+
+    public void RemoveUser(final View arg0){
+        Intent intent = RemoveUser.makeIntent(AdminMenu.this);
+        startActivity(intent);
+    }
+
+    public void RemoveVote(final View arg0){
+        Intent intent = RemoveVote.makeIntent(AdminMenu.this);
+        startActivity(intent);
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void LogOff(final View arg0) {
         CurrentUser.Reset();
@@ -38,4 +53,5 @@ public class AdminMenu extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }

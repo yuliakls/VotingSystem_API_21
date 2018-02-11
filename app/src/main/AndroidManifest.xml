@@ -22,7 +22,13 @@
         <activity android:name=".MobileCandidateList" />
         <activity android:name=".AdminMenu" />
         <activity android:name=".MobileResults" />
-        <activity android:name=".MobileSuccessSend"></activity>
+        <activity android:name=".MobileSuccessSend" />
+        <activity android:name=".AddUser" />
+        <activity
+            android:name=".RemoveUser"
+            android:label="@string/title_activity_remove_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RemoveVote"></activity>
     </application>
 
 </manifest>

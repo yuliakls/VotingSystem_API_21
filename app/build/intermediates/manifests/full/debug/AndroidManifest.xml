@@ -31,6 +31,12 @@
         <activity android:name="com.example.katri.lolvotingsystem.AdminMenu" />
         <activity android:name="com.example.katri.lolvotingsystem.MobileResults" />
         <activity android:name="com.example.katri.lolvotingsystem.MobileSuccessSend" />
+        <activity android:name="com.example.katri.lolvotingsystem.AddUser" />
+        <activity
+            android:name="com.example.katri.lolvotingsystem.RemoveUser"
+            android:label="@string/title_activity_remove_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.katri.lolvotingsystem.RemoveVote" />
 
         <meta-data
             android:name="android.support.VERSION"
