@@ -1,4 +1,0 @@
-#Sun Feb 11 01:41:51 IST 2018
-base.0=C\:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
-path.0=classes.dex
-renamed.0=classes.dex
