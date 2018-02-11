@@ -1,7 +1,6 @@
 package com.example.katri.lolvotingsystem;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -9,13 +8,12 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,6 +24,7 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
     private ListView lv;
     String ExistingVote;
     String CandidateID;
+    String CandidateName;
     ArrayList<HashMap<String, String>> candidateList;
     public TextView data;
     User CurrentUser;
@@ -53,10 +52,11 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 CandidateID = candidateList.get(i).get("id");
-                Toast.makeText(getApplicationContext()," "+ CandidateID,Toast.LENGTH_LONG).show();
+                CandidateName = candidateList.get(i).get("name");
+                //Toast.makeText(getApplicationContext()," "+ CandidateID,Toast.LENGTH_LONG).show();
                 builder
 
-                        .setMessage(Html.fromHtml("<font color='#e4e5e7'>        Are you sure in your choice?</font>"))
+                        .setMessage(Html.fromHtml("<font color='#e4e5e7'> You selected: "+ CandidateName +". Are you sure? </font>"))
                         .setNegativeButton("No",null)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override

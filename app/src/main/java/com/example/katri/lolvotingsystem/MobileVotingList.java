@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -71,7 +72,32 @@ public class MobileVotingList extends AppCompatActivity implements AsyncResponse
                 }
             }
         });
+
+        setupAdminMenuButton();
+
+
+
     }
+
+    private void setupAdminMenuButton() {
+
+        Button adm_btn = (Button) findViewById(R.id.admin_menu_button);
+        adm_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MobileVotingList.this, "moved to Admin Menu... ", Toast.LENGTH_SHORT).show();
+
+                //lunch the admin menu
+//                Intent intent;
+//                intent = AdminMenu.makeIntent(MobileVotingList.this);
+//                startActivity(intent);
+
+            }
+
+        });
+    }
+
+
 
     @Override
     public void processFinish(ArrayList<HashMap<String, String>> voteList,int flag) {
