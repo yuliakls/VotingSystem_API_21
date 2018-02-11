@@ -40,18 +40,11 @@ public class AddVoteSync extends AsyncTask<String, Void, String> {
     private EditText Start;
     private EditText Finish;
 
-
-    ArrayList<HashMap<String, String>> voteList;
-    ArrayList<Voting> UserVotings;
-    public TextView data;
-    private ListView lv;
-
-
-    //private ArrayList<String> listItems;
+    private  ArrayList<String> voteList;
 
     private ProgressDialog pDialog;
 
-    public AddVoteSync(Activity activity){
+    public AddVoteSync(Activity activity,ArrayList listv){
         this.activity =  activity;
         this.VoteName = (EditText) activity.findViewById(R.id.VoteName);
         this.VoteDescription = (EditText) activity.findViewById(R.id.VoteDescription);
@@ -59,11 +52,9 @@ public class AddVoteSync extends AsyncTask<String, Void, String> {
         this.Start = (EditText) activity.findViewById(R.id.start);
         this.Finish = (EditText) activity.findViewById(R.id.finish);
 
-
-        UserVotings = new ArrayList<>();
         voteList = new ArrayList<>();
-        lv = (ListView) activity.findViewById(R.id.list);
-
+        this.voteList = listv;
+        //Toast.makeText(activity.getApplicationContext(), listv.size(), Toast.LENGTH_LONG).show();
 
     }
 
@@ -118,6 +109,68 @@ public class AddVoteSync extends AsyncTask<String, Void, String> {
                     break;
                 }
                 in.close();
+
+                if (!sb.toString().equals("")) {
+
+                    if (isNumeric(sb.toString())) {
+                        for (int i = 0; i < voteList.size(); i++) {
+
+                            String CN = "'" + voteList.get(i).toString() + "'";
+                            String ID = "'" + Integer.toString(i+1) + "'";
+
+                            try {
+                                URL url2 = new URL("https://morning-anchorage-32230.herokuapp.com/addcandidate");
+
+                                JSONObject postDataParams2 = new JSONObject();
+
+                                postDataParams2.put("CandidateName", CN);
+                                postDataParams2.put("CandidateID", ID);
+                                postDataParams2.put("VoteNum", sb.toString());
+
+
+                                HttpURLConnection conn2 = (HttpURLConnection) url2.openConnection();
+                                conn2.setReadTimeout(20000 /* milliseconds */);
+                                conn2.setConnectTimeout(15000 /* milliseconds */);
+                                conn2.setRequestMethod("POST");
+                                conn2.setDoInput(true);
+                                conn2.setDoOutput(true);
+
+                                OutputStream os2 = conn2.getOutputStream();
+                                BufferedWriter writer2 = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
+                                writer.write(getPostDataString(postDataParams2));
+                                writer.flush();
+                                writer.close();
+                                os2.close();
+
+                                int responseCode2 = conn2.getResponseCode();
+                                if (responseCode2 == HttpsURLConnection.HTTP_OK) {
+                                    BufferedReader in2 = new BufferedReader(new InputStreamReader(conn2.getInputStream()));
+                                    StringBuffer sb2 = new StringBuffer("");
+                                    String line2 = "";
+
+                                    while ((line2 = in2.readLine()) != null) {
+                                        sb.append(line2);
+                                        break;
+                                    }
+                                    in2.close();
+                                    Toast.makeText(activity.getApplicationContext(), sb2.toString(), Toast.LENGTH_LONG).show();
+                                } else {
+                                    Toast.makeText(activity.getApplicationContext(), responseCode, Toast.LENGTH_LONG).show();
+                                }
+                            } catch (Exception e) {
+                                Toast.makeText(activity.getApplicationContext(), e.getMessage().toString(), Toast.LENGTH_LONG).show();
+                            }
+                        }
+                    }
+                    else{
+                        Toast.makeText(activity.getApplicationContext(), "Sorry!", Toast.LENGTH_LONG).show();
+                    }
+                }
+
+                else {
+                    Toast.makeText(activity.getApplicationContext(), "Error! We Dont Know Why :(", Toast.LENGTH_LONG).show();
+                }
+
                 return sb.toString();
             } else {
                 return new String("False : " + responseCode);
@@ -148,88 +201,38 @@ public class AddVoteSync extends AsyncTask<String, Void, String> {
         if (pDialog.isShowing()) pDialog.dismiss();
 
         if (!result.equals("")) {
-
-            if (isNumeric(result)) {
-
-
-                for (int i = 0; i < voteList.size(); i++) {
-
-                    String CN = "'" + voteList.get(voteList.indexOf(i)).toString() + "'";
-                    String ID = "'" + Integer.toString(i) + "'";
-
-                    try {
-                        URL url = new URL("https://morning-anchorage-32230.herokuapp.com/addcandidate");
-
-                        JSONObject postDataParams = new JSONObject();
-
-                        postDataParams.put("CandidateName", CN);
-                        postDataParams.put("CandidateID", ID);
-                        postDataParams.put("VoteNum", result);
+            if(result.equals("true")) {
+                Toast.makeText(activity.getApplicationContext(), "The User Was Added!", Toast.LENGTH_LONG).show();
 
 
-                        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-                        conn.setReadTimeout(20000 /* milliseconds */);
-                        conn.setConnectTimeout(15000 /* milliseconds */);
-                        conn.setRequestMethod("POST");
-                        conn.setDoInput(true);
-                        conn.setDoOutput(true);
-
-                        OutputStream os = conn.getOutputStream();
-                        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os, "UTF-8"));
-                        writer.write(getPostDataString(postDataParams));
-                        writer.flush();
-                        writer.close();
-                        os.close();
-
-                        int responseCode = conn.getResponseCode();
-                        if (responseCode == HttpsURLConnection.HTTP_OK) {
-                            BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-                            StringBuffer sb = new StringBuffer("");
-                            String line = "";
-
-                            while ((line = in.readLine()) != null) {
-                                sb.append(line);
-                                break;
-                            }
-                            in.close();
-                            Toast.makeText(activity.getApplicationContext(), sb.toString(), Toast.LENGTH_LONG).show();
-                        } else {
-                            Toast.makeText(activity.getApplicationContext(), responseCode, Toast.LENGTH_LONG).show();
-                        }
-                    } catch (Exception e) {
-                        Toast.makeText(activity.getApplicationContext(), e.getMessage().toString(), Toast.LENGTH_LONG).show();
-                    }
-
-                    // Clear
-                    this.VoteName.getText().clear();
-                    this.VoteDescription.getText().clear();
-                    this.Start.getText().clear();
-                    this.Finish.getText().clear();
-                    this.voteList.clear();
-
-//                for(int i=0 ; i<voteList.size(); i++ ) {
-//                    this.voteList.remove(i);
-//                }
-
-                }
-            }
-            else{
-                    Toast.makeText(activity.getApplicationContext(), "Sorry!", Toast.LENGTH_LONG).show();
-
-                    // Clear
-                    this.VoteName.getText().clear();
-                    this.VoteDescription.getText().clear();
-                    this.Start.getText().clear();
-                    this.Finish.getText().clear();
-                    this.voteList.clear();
-                }
+                // Clear
+                this.VoteName.getText().clear();
+                this.VoteDescription.getText().clear();
+                this.Start.getText().clear();
+                this.Finish.getText().clear();
+                this.voteList.clear();
 
             }
-
             else {
-                Toast.makeText(activity.getApplicationContext(), "Error! We Dont Know Why :(", Toast.LENGTH_LONG).show();
+                Toast.makeText(activity.getApplicationContext(), "Sorry!", Toast.LENGTH_LONG).show();
+
+
+                // Clear
+                this.VoteName.getText().clear();
+                this.VoteDescription.getText().clear();
+                this.Start.getText().clear();
+                this.Finish.getText().clear();
+                this.voteList.clear();
             }
+
+        }
+        else{
+            Toast.makeText(activity.getApplicationContext(), "Error! We Dont Know Why :(", Toast.LENGTH_LONG).show();
+        }
+
+
     }
+
 
     public String getPostDataString(JSONObject params) throws Exception {
 

@@ -7,22 +7,22 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1518304160766"
+    timestamp="1518307805938"
     token="758255855895121264"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="460" />
+        duration="2396" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="19" />
+        duration="25" />
     <task
         name="verifier"
-        duration="4" />
+        duration="18" />
 
     <artifact
         location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
@@ -98,8 +98,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1518303747175"
+        ir-eligibility="FIELD_REMOVED"
+        timestamp="1518306216550"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\outputs\apk\debug\app-debug.apk"
@@ -108,7 +108,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1518304160766"
+        timestamp="1518307805938"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\salib\StudioProjects\LOLVotingSystem\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
