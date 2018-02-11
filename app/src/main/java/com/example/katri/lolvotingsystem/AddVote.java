@@ -123,7 +123,7 @@ public class AddVote extends AppCompatActivity {
 //            Toast.makeText(getApplicationContext(), "The Finish Date Is Not Valid", Toast.LENGTH_LONG).show();
 //        }
         else {
-            AddVoteSync aus = new AddVoteSync(this);
+            AddVoteSync aus = new AddVoteSync(this, listItems);
             aus.execute();
 
         }
