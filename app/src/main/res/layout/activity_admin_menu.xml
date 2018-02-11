@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_login_gradients"
+    android:layout_gravity="center"
+    tools:context="com.example.katri.lolvotingsystem.AdminMenu">
+
+
+    <Button
+        android:id="@+id/removevote"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/oprion"
+        android:padding="12dp"
+        android:text="Remove Vote"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/removeuser"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <Button
+        android:id="@+id/addvote"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_weight="1"
+        android:background="@drawable/oprion"
+        android:padding="12dp"
+        android:text="Add Vote"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/adduser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <Button
+        android:id="@+id/removeuser"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="56dp"
+        android:layout_weight="1"
+        android:background="@drawable/oprion"
+        android:padding="12dp"
+        android:text="Remove User"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/adduser"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <Button
+        android:id="@+id/adduser"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/oprion"
+        android:padding="12dp"
+        android:text="Add User"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results" />
+
+    <Button
+        android:id="@+id/results"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/oprion"
+        android:clickable="true"
+        android:onClick="ViewResults"
+        android:padding="10dp"
+        android:text="Results"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="132dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vslogo" />
+
+    <TextView
+        android:id="@+id/hellouser"
+        android:layout_width="335dp"
+        android:layout_height="23dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:text="Hello"
+        android:textColor="@color/purple"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <Button
+        android:id="@+id/logof"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logoff"
+        android:clickable="true"
+        android:onClick="LogOff"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

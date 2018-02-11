@@ -104,6 +104,7 @@ public class UserSync extends AsyncTask<String, Void, String> {
             try {
                 CreateUser(result);
                 Intent intent = new Intent(activity,MobileVotingList.class);
+                intent.putExtra("flag", "0");
                 activity.startActivity(intent);
                 activity.finish();
 

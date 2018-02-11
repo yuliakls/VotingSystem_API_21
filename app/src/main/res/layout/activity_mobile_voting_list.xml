@@ -7,8 +7,6 @@
     android:background="@drawable/new_login_gradients"
     tools:context="com.example.katri.lolvotingsystem.MobileVotingList">
 
-
-
     <TextView
         android:layout_width="91dp"
         android:layout_height="30dp"
@@ -19,11 +17,11 @@
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.018" />
 
     <TextView
         android:id="@+id/hellouser"
@@ -42,11 +40,59 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.004" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="132dp"
+        android:layout_height="112dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vslogo" />
+
+
+    <Button
+        android:id="@+id/Menu"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="416dp"
+        android:background="@drawable/menuvs"
+        android:clickable="true"
+        android:onClick="MenuBar"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.973"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logof"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logoff"
+        android:clickable="true"
+        android:onClick="LogOff"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ListView
         android:id="@+id/list"
         android:layout_width="fill_parent"
-        android:layout_height="441dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="108dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

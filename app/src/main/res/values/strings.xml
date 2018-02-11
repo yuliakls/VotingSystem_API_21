@@ -3,4 +3,6 @@
     <string name="password">Password</string>
     <string name="Confirmation">Confirmation</string>
     <string name="terms_of_use">Terms of use: The user authorized in the "Voting System" allowed to vote. The user familiar with the candidates and has no complains about them. The user acknowledge that his vote cannot be recalled once submitted, there will be no complains on this subject. </string>
+    <string name="success">Your voting was successfully updated! We thank you for taking time.
+    To continue, press to votings button or logoff.</string>
 </resources>

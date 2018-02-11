@@ -155,14 +155,9 @@ public class CandidateSync extends AsyncTask<String, Void, String> {
                 R.layout.list_item, new String[]{"name"}, new int[]{R.id.name});
 
         lv.setAdapter(adapter);
-        delegate.processFinish(candidateList);
+        delegate.processFinish(candidateList,0);
     }
-/*
-    public  void AddVoting(String CandidateID, String CandidateName) throws ParseException {
-        Candidate NewCandidate = new Candidate(String CandidateID, String CandidateName);
-        UserVotings.add(NewVote);
-    }
-*/
+
     public String getPostDataString(JSONObject params) throws Exception {
 
         StringBuilder result = new StringBuilder();

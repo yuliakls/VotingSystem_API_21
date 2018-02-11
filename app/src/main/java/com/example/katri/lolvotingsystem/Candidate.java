@@ -13,7 +13,7 @@ public class Candidate {
         this.CandidateName = CandidateName;
     }
 
-    public String getVoteDescription() {
+    public String getCandidateName() {
         return CandidateName;
     }
 }

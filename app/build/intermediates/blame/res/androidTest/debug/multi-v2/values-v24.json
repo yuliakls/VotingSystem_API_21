@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\d19328c58e1ca10d6154e473c8bbdc7d\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\3172457d67b08538ad5b60aaa31906ce\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\fa482738d9b44a7907e4f2310766c781\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

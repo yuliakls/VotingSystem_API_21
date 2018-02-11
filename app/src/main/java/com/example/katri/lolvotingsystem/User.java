@@ -30,6 +30,10 @@ public class User {
         return instance;
     }
 
+    public synchronized static void Reset(){
+        instance = null;
+    }
+
     public synchronized static User init(String UserID, String Name, String Email, String Password, boolean Admin) {
         if (instance != null)
         {

@@ -5,6 +5,8 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -22,7 +24,6 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
 
     private ProgressDialog pDialog;
     private ListView lv;
-    String User;
     String ExistingVote;
     String CandidateID;
     ArrayList<HashMap<String, String>> candidateList;
@@ -61,6 +62,14 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 SendBalot(0);
+                                try {
+                                    Thread.sleep(300);
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
+                                Intent inte = new Intent(MobileCandidateList.this, MobileSuccessSend.class);
+                                startActivity(inte);
+
                             }
                         }).create().show();
             }
@@ -68,7 +77,7 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
     }
 
     @Override
-    public void processFinish(ArrayList<HashMap<String, String>> candidateList) {
+    public void processFinish(ArrayList<HashMap<String, String>> candidateList,int flag) {
         this.candidateList = candidateList;
     }
 
@@ -77,6 +86,15 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
             SendBalotSync balot = new SendBalotSync(this, flag ,ExistingVote ,CandidateID);
             balot.execute();
         }
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void LogOff(final View arg0) {
+        CurrentUser.Reset();
+        Intent intent = new Intent(MobileCandidateList.this,MobileLogin.class);
+        this.finishAffinity();
+        startActivity(intent);
+        finish();
     }
 
 }

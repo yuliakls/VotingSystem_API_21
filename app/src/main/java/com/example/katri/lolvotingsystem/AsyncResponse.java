@@ -8,5 +8,5 @@ import java.util.HashMap;
  */
 
 public interface AsyncResponse {
-    void processFinish(ArrayList<HashMap<String, String>> voteList);
+    void processFinish(ArrayList<HashMap<String, String>> voteList, int flag);
 }

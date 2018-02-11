@@ -28,6 +28,9 @@
         </activity>
         <activity android:name="com.example.katri.lolvotingsystem.MobileVotingList" />
         <activity android:name="com.example.katri.lolvotingsystem.MobileCandidateList" />
+        <activity android:name="com.example.katri.lolvotingsystem.AdminMenu" />
+        <activity android:name="com.example.katri.lolvotingsystem.MobileResults" />
+        <activity android:name="com.example.katri.lolvotingsystem.MobileSuccessSend" />
 
         <meta-data
             android:name="android.support.VERSION"

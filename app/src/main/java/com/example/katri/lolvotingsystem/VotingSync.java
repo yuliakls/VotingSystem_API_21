@@ -49,8 +49,10 @@ public class VotingSync extends AsyncTask<String, Void, String> {
     public TextView data;
     private ListView lv;
     String Url = "";
+    int flag;
 
     public VotingSync(Activity activity, int flag) {
+        this.flag = flag;
         this.activity = activity;
         UserVotings = new ArrayList<>();
         CurrentUser = CurrentUser.getInstance();
@@ -61,7 +63,6 @@ public class VotingSync extends AsyncTask<String, Void, String> {
             Url = "https://morning-anchorage-32230.herokuapp.com/getallvotes";
         else
             Url = "https://morning-anchorage-32230.herokuapp.com/getvotes";
-            //Url = "https://morning-anchorage-32230.herokuapp.com/getvotes"+ "?UserID="+"'"+ CurrentUser.GetUserID() + "'";
     }
 
     @Override
@@ -170,7 +171,7 @@ public class VotingSync extends AsyncTask<String, Void, String> {
 
         lv.setAdapter(adapter);
 
-        delegate.processFinish(voteList);
+        delegate.processFinish(voteList,flag);
     }
 
     public String getPostDataString(JSONObject params) throws Exception {
