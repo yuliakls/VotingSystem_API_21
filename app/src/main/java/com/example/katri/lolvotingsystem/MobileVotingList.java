@@ -1,6 +1,5 @@
 package com.example.katri.lolvotingsystem;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -11,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,9 +65,9 @@ public class MobileVotingList extends AppCompatActivity implements AsyncResponse
                     //finish();
                 }
                 else {
-                    Intent intent = new Intent(MobileVotingList.this, MobileResults.class);
-                    intent.putExtra("VoteNum", voteList.get(i).get("id"));
-                    startActivity(intent);
+//                    Intent intent = new Intent(MobileVotingList.this, MobileResults.class);
+//                    intent.putExtra("VoteNum", voteList.get(i).get("id"));
+//                    startActivity(intent);
                 }
             }
         });

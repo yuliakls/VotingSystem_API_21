@@ -21,15 +21,8 @@
         <activity android:name=".MobileVotingList" />
         <activity android:name=".MobileCandidateList" />
         <activity android:name=".AdminMenu" />
-<<<<<<< HEAD
         <activity android:name=".MobileResults" />
         <activity android:name=".MobileSuccessSend"></activity>
-=======
-        <activity android:name=".AddUser" />
-        <activity android:name=".RemoveUser" />
-        <activity android:name=".AddVote" />
-        <activity android:name=".RemoveVote"></activity>
->>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
     </application>
 
 </manifest>
