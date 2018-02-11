@@ -17,7 +17,6 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Iterator;
@@ -62,7 +61,7 @@ public class UserSync extends AsyncTask<String, Void, String> {
             postDataParams.put("UserID", ID);
             postDataParams.put("Password", PS);
 
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
             conn.setReadTimeout(20000 /* milliseconds */);
             conn.setConnectTimeout(15000 /* milliseconds */);
             conn.setRequestMethod("POST");
@@ -120,9 +119,9 @@ public class UserSync extends AsyncTask<String, Void, String> {
 
     public String getPostDataString(JSONObject params) throws Exception {
 
-        StringBuilder result = new StringBuilder();
-        boolean first = true;
-        Iterator<String> itr = params.keys();
+            StringBuilder result = new StringBuilder();
+            boolean first = true;
+            Iterator<String> itr = params.keys();
 
         while(itr.hasNext()){
             String key= itr.next();

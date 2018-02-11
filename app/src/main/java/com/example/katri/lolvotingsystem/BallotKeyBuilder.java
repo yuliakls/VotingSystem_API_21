@@ -24,8 +24,7 @@ public class BallotKeyBuilder {
         String operator = get_operator();
         String time =  get_timestamp();
         String prime =  get_prime();
-        String msg = AES.encrypt(string_xor(operator,time),prime);
-
+        String msg = AES.keygen(string_xor(operator,time),prime);
         return msg;
     }
 

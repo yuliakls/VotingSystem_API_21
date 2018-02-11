@@ -1,9 +1,16 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
 ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
+=======
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+>>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5320cc8115bca34f7c34201e295551b9\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3dcfebeaef32983cad808cfec2d99a55\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\f5d1757904077bd2401ff6cbdb68d7d5\AndroidManifest.xml:17:1-28:12
@@ -15,20 +22,34 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Yulia\.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\2bff4033cdb8285dff237b120ee223a4\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\2b32b49a390699d10cd5aaa9dd4d3c97\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\5c68223aa92d39ba60a4d665f8065a1f\AndroidManifest.xml:17:1-30:12
+<<<<<<< HEAD
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
+=======
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+>>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
 	package
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
+<<<<<<< HEAD
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-28:12
+=======
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:1-30:12
+>>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
 		INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:2:11-69
@@ -37,7 +58,11 @@ ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\And
 	android:name
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:5:22-64
 application
+<<<<<<< HEAD
 ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:7:5-26:19
+=======
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:7:5-28:19
+>>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5320cc8115bca34f7c34201e295551b9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\5320cc8115bca34f7c34201e295551b9\AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Yulia\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\3dcfebeaef32983cad808cfec2d99a55\AndroidManifest.xml:9:5-20
@@ -98,6 +123,7 @@ activity#com.example.katri.lolvotingsystem.AdminMenu
 ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:23:9-47
 	android:name
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:23:19-44
+<<<<<<< HEAD
 activity#com.example.katri.lolvotingsystem.MobileResults
 ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:24:9-51
 	android:name
@@ -106,6 +132,24 @@ activity#com.example.katri.lolvotingsystem.MobileSuccessSend
 ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:25:9-64
 	android:name
 		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:25:19-52
+=======
+activity#com.example.katri.lolvotingsystem.AddUser
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:24:9-45
+	android:name
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:24:19-42
+activity#com.example.katri.lolvotingsystem.RemoveUser
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:25:9-48
+	android:name
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:25:19-45
+activity#com.example.katri.lolvotingsystem.AddVote
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:26:9-45
+	android:name
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:26:19-42
+activity#com.example.katri.lolvotingsystem.RemoveVote
+ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:27:9-57
+	android:name
+		ADDED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml:27:19-45
+>>>>>>> 8934b9e5523a904fc8bd734907ba8b405b53f26a
 uses-sdk
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Yulia\AndroidStudioProjects\LOLVotingSystem\app\src\main\AndroidManifest.xml
