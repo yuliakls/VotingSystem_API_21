@@ -11,11 +11,10 @@
         android:id="@+id/imageView4"
         android:layout_width="109dp"
         android:layout_height="100dp"
-        android:layout_marginStart="284dp"
+        android:layout_marginStart="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vslogo"
-        android:layout_marginLeft="284dp" />
+        app:srcCompat="@drawable/vslogo" />
 
     <TextView
         android:id="@+id/hellouser"
@@ -63,56 +62,76 @@
 
     <TextView
         android:id="@+id/remove_vote"
-        android:layout_width="199dp"
-        android:layout_height="30dp"
+        android:layout_width="174dp"
+        android:layout_height="46dp"
         android:background="@android:color/transparent"
         android:ems="10"
-        android:text="Remove Vote"
+        android:text="Remove Voting"
         android:textColor="@color/colorPrimary"
         android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.137" />
+        app:layout_constraintVertical_bias="0.23" />
 
     <Button
         android:id="@+id/finish_btn"
-        android:layout_width="wrap_content"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="97dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/background_login"
         android:text="Finish"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/remove_btn"
+        app:layout_constraintVertical_bias="0.402"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp" />
 
     <Button
         android:id="@+id/remove_btn"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
         android:layout_width="wrap_content"
         android:layout_height="44dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/background_login"
+        android:clickable="true"
+        android:onClick="doIt"
         android:text="Remove"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.467"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658"
-        tools:ignore="MissingConstraints"
+        app:layout_constraintVertical_bias="0.722"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/logof"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/logoff"
         android:clickable="true"
-        android:onClick="doIt"/>
+        android:onClick="LogOff"
+        android:padding="12dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.977"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </android.support.constraint.ConstraintLayout>

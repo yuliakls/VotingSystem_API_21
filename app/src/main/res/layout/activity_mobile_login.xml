@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/new_login_gradients"
-    tools:context="com.example.katri.lolvotingsystem.MobileLogin">
+    tools:context="com.example.katri.lolvotingsystem.MobileLogin"
+    >
 
 
     <TextView
@@ -105,7 +106,7 @@
         android:layout_marginTop="456dp"
         android:padding="8dp"
         android:text="I accept!"
-        android:textColor="#8c73279f"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

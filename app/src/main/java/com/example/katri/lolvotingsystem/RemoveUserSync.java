@@ -108,9 +108,7 @@ public class RemoveUserSync extends AsyncTask<String, Void, String> {
         if(!result.equals("")) {
             if (result.equals("true")) {
                 Toast.makeText(activity.getApplicationContext(), "The User Was Removed!", Toast.LENGTH_LONG).show();
-
                 this.UserID.getText().clear();
-
 
             } else {
                 Toast.makeText(activity.getApplicationContext(), "Sorry! The User Doesnt Exist", Toast.LENGTH_LONG).show();
@@ -120,7 +118,6 @@ public class RemoveUserSync extends AsyncTask<String, Void, String> {
             }
         }
     }
-
 
     public String getPostDataString(JSONObject params) throws Exception {
 

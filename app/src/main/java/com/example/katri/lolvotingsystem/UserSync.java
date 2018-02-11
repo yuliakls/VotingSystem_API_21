@@ -62,6 +62,7 @@ public class UserSync extends AsyncTask<String, Void, String> {
             postDataParams.put("UserID", ID);
             postDataParams.put("Password", PS);
 
+
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setReadTimeout(20000 /* milliseconds */);
             conn.setConnectTimeout(15000 /* milliseconds */);

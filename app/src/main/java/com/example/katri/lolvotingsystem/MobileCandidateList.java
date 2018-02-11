@@ -53,10 +53,10 @@ public class MobileCandidateList extends AppCompatActivity implements AsyncRespo
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 CandidateID = candidateList.get(i).get("id");
-                Toast.makeText(getApplicationContext()," "+ CandidateID,Toast.LENGTH_LONG).show();
+                String CandidateName = candidateList.get(i).get("name");
                 builder
 
-                        .setMessage(Html.fromHtml("<font color='#e4e5e7'>        Are you sure in your choice?</font>"))
+                        .setMessage(Html.fromHtml("<font color='#e4e5e7'>        " + "You selected: "+ CandidateName + ". Are you sure in your choice?</font>"))
                         .setNegativeButton("No",null)
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             @Override

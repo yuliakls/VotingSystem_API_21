@@ -1,5 +1,7 @@
 package com.example.katri.lolvotingsystem;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -12,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class RemoveVote extends AppCompatActivity {
-
+    User CurrentUser;
     private EditText VoteID;
 
     @Override
@@ -20,6 +22,8 @@ public class RemoveVote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remove_vote);
 
+
+        CurrentUser = CurrentUser.getInstance();
         VoteID = (EditText) findViewById(R.id.vote_num);
 
         setUpFinishButton();
@@ -54,5 +58,14 @@ public class RemoveVote extends AppCompatActivity {
             }
         });
 
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void LogOff(final View arg0) {
+        CurrentUser.Reset();
+        Intent intent = new Intent(RemoveVote.this,MobileLogin.class);
+        this.finishAffinity();
+        startActivity(intent);
+        finish();
     }
 }

@@ -45,6 +45,11 @@ public class AdminMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void AddVote(final View arg0){
+        Intent intent = AddVote.makeIntent(AdminMenu.this);
+        startActivity(intent);
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     public void LogOff(final View arg0) {
         CurrentUser.Reset();

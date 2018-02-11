@@ -1,5 +1,7 @@
 package com.example.katri.lolvotingsystem;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -14,7 +16,7 @@ import android.widget.Toast;
 
 public class AddUser extends AppCompatActivity {
 
-
+    User CurrentUser;
     private EditText UserID;
     private EditText Name;
     private EditText Email;
@@ -29,6 +31,8 @@ public class AddUser extends AppCompatActivity {
 
         setUpFinishButton();
 
+
+        CurrentUser = CurrentUser.getInstance();
         UserID = (EditText) findViewById(R.id.UserID);
         Password = (EditText) findViewById(R.id.Password);
         Name = (EditText) findViewById(R.id.userName);
@@ -68,5 +72,14 @@ public class AddUser extends AppCompatActivity {
             }
         });
 
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void LogOff(final View arg0) {
+        CurrentUser.Reset();
+        Intent intent = new Intent(AddUser.this,MobileLogin.class);
+        this.finishAffinity();
+        startActivity(intent);
+        finish();
     }
 }

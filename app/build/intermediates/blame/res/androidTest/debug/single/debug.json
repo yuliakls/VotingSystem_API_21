@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
@@ -56,28 +56,28 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_design_text_input_password_icon.xml.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\layout\\design_text_input_password_icon.xml"
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_design_text_input_password_icon.xml.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\layout\\design_text_input_password_icon.xml"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_btn_borderless_material.xml.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_btn_borderless_material.xml.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
@@ -232,12 +232,12 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
@@ -264,12 +264,12 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -340,20 +340,20 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\layout-v26\\abc_screen_toolbar.xml"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_avd_hide_password.xml.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\drawable-v21\\avd_hide_password.xml"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_part_chronometer.xml.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_design_snackbar_in.xml.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\anim\\design_snackbar_in.xml"
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-v21_avd_hide_password.xml.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim_design_snackbar_in.xml.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\anim\\design_snackbar_in.xml"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_media_custom.xml.flat",
@@ -528,12 +528,12 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-mdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_design_layout_tab_icon.xml.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout_design_layout_tab_icon.xml.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\design-26.1.0.aar\\b35c2c6e5348db752e934c299b9a0fb8\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
@@ -612,12 +612,12 @@
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\5c466364407dfed7459778cd4ae6c33a\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
-        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
-    },
-    {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
+        "source": "C:\\Users\\Katri\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\406a0e07732d289d88e4277b5549860d\\res\\drawable-hdpi-v4\\abc_text_select_handle_left_mtrl_light.png"
     },
     {
         "merged": "C:\\Users\\Katri\\Downloads\\LOLVotingSystem\\app\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",

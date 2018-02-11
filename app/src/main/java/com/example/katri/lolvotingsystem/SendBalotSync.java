@@ -57,7 +57,6 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     protected String doInBackground(String... arg0) {
-        BallotKeyBuilder Key = new BallotKeyBuilder(activity.getApplicationContext());
         //Log.i("key------------------",obj.BuildKey());
         String ID = "'" + CurrentUser.GetUserID() + "'";
         String VN = "'" + ExistingVote + "'";
@@ -111,10 +110,11 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
                 URL url = new URL("https://morning-anchorage-32230.herokuapp.com/sendballot");
 
                 JSONObject postDataParams = new JSONObject();
+                BallotKeyBuilder Key = new BallotKeyBuilder(activity.getApplicationContext());
 
                 postDataParams.put("CandidateID", CID);
                 postDataParams.put("VoteNum", VN);
-                postDataParams.put("VoteKey", "'totototototo'");
+                postDataParams.put("VoteKey", "'" + Key.BuildKey() + "'");
 
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -160,11 +160,7 @@ public class SendBalotSync extends AsyncTask<String, Void, String> {
     protected void onPostExecute(String result) {
         if (pDialog.isShowing()) pDialog.dismiss();
 
-        if(!result.equals("")){
-            //boolean answer = Boolean.parseBoolean(result);
-            Toast.makeText(activity.getApplicationContext()," ---OK--- "+result,Toast.LENGTH_LONG).show();
-        }
-        else{
+        if(result.equals("")){
             Toast.makeText(activity.getApplicationContext(), "Error in server result!", Toast.LENGTH_LONG).show();
         }
     }

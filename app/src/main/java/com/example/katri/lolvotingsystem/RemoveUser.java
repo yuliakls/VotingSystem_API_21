@@ -1,5 +1,7 @@
 package com.example.katri.lolvotingsystem;
 
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -13,12 +15,15 @@ import android.widget.Toast;
 
 public class RemoveUser extends AppCompatActivity {
 
+    User CurrentUser;
     private EditText UserID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_remove_user);
+
+        CurrentUser = CurrentUser.getInstance();
 
         setUpFinishButton();
         UserID = (EditText) findViewById(R.id.UserID);
@@ -56,5 +61,13 @@ public class RemoveUser extends AppCompatActivity {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void LogOff(final View arg0) {
+        CurrentUser.Reset();
+        Intent intent = new Intent(RemoveUser.this,MobileLogin.class);
+        this.finishAffinity();
+        startActivity(intent);
+        finish();
+    }
 
 }
